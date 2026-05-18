@@ -14,6 +14,9 @@ For real work also read STATUS.md, MEMORY.md. Skip for greetings.
 
 ## Rules
 
+### First turn after deployment — DO NOT explore
+The workspace was just provisioned. It contains placeholder `server.js` + `index.html` that exist only so the public URL doesn't 404 — they have no logic worth understanding. Tool calls like `Read: .`, `Bash: ls -la`, `Read: package.json`, `Read: server.js` on turn 1 add 60-90s of latency and zero information. Skip them. If TEMPLATE.md exists, that's the only file worth a single `Read` before you respond. Otherwise reply text-first: acknowledge what the user wants, propose the minimal first step in one short paragraph, and offer to scaffold it. The user types "App idea: X" → you say "Got it — building X with [chosen stack]. Want me to start with [minimal first feature]?" — not 7 Read tool calls.
+
 ### Conversational vs work mode
 - Trivial messages ("hi", "thanks", quick questions you can answer from context) → reply with text only, no tools.
 - Default ≤3 tool calls/turn. Only exceed for explicit build/fix/debug requests.
