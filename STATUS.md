@@ -1,5 +1,5 @@
 # STATUS.md — Live Infrastructure (auto-updated)
-_Last updated: 2026-05-15T23:52:45.050Z_
+_Last updated: 2026-05-18T21:14:52.759Z_
 
 ## Container
 - **Name**: vk-zip
@@ -14,11 +14,11 @@ _Last updated: 2026-05-15T23:52:45.050Z_
 - **Subdomain**: zip.vibekit.bot
 - **DB Status**: running
 - **Health Failures**: 0
-- **Last Healthy**: 2026-05-15T23:52:39.6+00:00
+- **Last Healthy**: 2026-05-18T21:14:06.003+00:00
 - **Custom Domain**: solana.zip
 
 ## Host
-- **Disk**: 22G used / 30G total (71% full)
+- **Disk**: 25G used / 30G total (83% full)
 
 ## Recent Logs (last 10 lines)
 ```
